@@ -1,0 +1,83 @@
+body {
+  background: url('background.jpg') no-repeat top center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin: 0 auto;
+      background-attachment: fixed;
+  color: white;
+  padding: 0px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+h2 {
+  width: 100%;
+}
+
+h3 {
+  margin-bottom: 50px;
+}
+
+h1 {
+font-size: 30pt;
+font-family: 'Trocchi', serif;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 30%;
+  border-radius: 0px 0px 10px 10px;
+  border-left: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  margin-left: 15%;
+  margin-top: 0px;
+  padding: 10px 15px;
+}
+
+
+form {
+  margin: 0px auto;
+  text-align: left;
+  width: 275px;
+  label {
+    margin-top: 15px;
+    font-size: 12pt;
+  }
+  input {
+    height: 35px;
+    width: 275px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 18px;
+    outline-width: 0;
+    font-family: 'Courier';
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  input[type="submit"] {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px auto 0px;
+    color: black;
+    width: 150px;
+    &:hover {
+      background: gray;
+    }
+  }
+}
+
+
+.box {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.submit {
+  text-align: center;
+}
