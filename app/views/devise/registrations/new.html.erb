@@ -9,12 +9,12 @@
   <%= devise_error_messages! %>
 
   <div>
-  <%= f.email_field :email, :autofocus => true %><br/>
+  <%= f.email_field :email, :autofocus => true, :class => 'email' %><br/>
   <%= f.label :email %>
 </div>
 
   <div>
-  <%= f.text_field :username %><br />
+  <%= f.text_field :username, :class => 'username' %><br />
   <%= f.label :username %>
 </div>
 
@@ -25,12 +25,12 @@
 
 
   <div>
-  <%= f.password_field :password %><br />
+  <%= f.password_field :password, :class => 'password' %><br />
   <%= f.label :password %>
 </div>
 
   <div>
-  <%= f.password_field :password_confirmation %><br />
+  <%= f.password_field :password_confirmation, :class => 'password_confirmation' %><br />
   <%= f.label :password_confirmation %>
 </div>
 

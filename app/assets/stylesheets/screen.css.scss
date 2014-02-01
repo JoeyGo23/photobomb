@@ -19,6 +19,14 @@ h2 {
   font-size: 24pt;
 }
 
+.select {
+  border-bottom: 2px solid red;
+}
+
+.valid {
+  border-bottom: 2px solid green;
+}
+
 p {
   font-size: 13pt;
   font-family: 'Courier';
