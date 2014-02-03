@@ -16,20 +16,6 @@
 //= require_tree .
 
 $(function() {
-  // $('input').focusin(function() {
-  //   $(this).addClass('select');
-  // });
-  // $('input').focusout(function() {
-  //   $(this).removeClass('select');
-  // });
-
-  // $('.username').keyup(function() {
-  //   if ($(this).val())) {
-  //     $(this).css("border-bottom", "2px solid green");
-  //   }
-  // });
-
-
 
   $('.email').keyup(function () {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -88,22 +74,5 @@ $(function() {
         $('.wrong-confirmation').show("slow");
       }
     });
-
-  //   $('.email').focusout(function() {
-  //     $(this).css("border-bottom", "2px solid white");
-  //     $('.right-email').hide();
-  //   }
-  // });
-
-    // $('input').keyup(function() {
-    //   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //   var username = $('.username').val();
-    //   var password = $('.password').val();
-    //   var password_confirmation = $('.password_confirmation').val();
-    //   if (re.test($('.email').val())) && ( username.length > 3 ) && ( password.length > 7 ) && ( password == password_confirmation ) {
-    //     $('.submit').show();
-    //   }
-    // });
-
 
 });
