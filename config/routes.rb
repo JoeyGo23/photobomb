@@ -1,7 +1,9 @@
 ArticleApp::Application.routes.draw do
+  resources :photos
+
   devise_for :users
   resources :articles
-  root 'articles#index'
+  root 'photos#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

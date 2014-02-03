@@ -17,19 +17,21 @@
 
 $(function() {
 
+
+
   $('.email').keyup(function () {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
       if (re.test($(this).val())) {
 
         $(this).css("border-bottom", "2px solid green");
-        $('.wrong-email').hide();
-        $('.right-email').show();
+        $('.wrong-email').hide("slow");
+        // $('.right-email').show();
 
       } else {
 
         $(this).css("border-bottom", "2px solid red");
-        $('.right-email').hide();
+        // $('.right-email').hide();
         $('.wrong-email').show("slow");
       }
     });
@@ -39,24 +41,25 @@ $(function() {
       var value = $(this).val();
       if ( value.length > 3 ) {
         $(this).css("border-bottom", "2px solid green");
-        $('.wrong-username').hide();
-        $('.right-username').show();
+        $('.wrong-username').hide("slow");
+        // $('.right-username').show();
       } else {
         $(this).css("border-bottom", "2px solid red");
-        $('.right-username').hide();
+        // $('.right-username').hide();
         $('.wrong-username').show("slow");
       }
     });
+
 
     $('.password').keyup(function () {
       var value = $(this).val();
       if ( value.length > 7 ) {
         $(this).css("border-bottom", "2px solid green");
-        $('.wrong-password').hide();
-        $('.right-password').show();
+        $('.wrong-password').hide("slow");
+        // $('.right-password').show();
       } else {
         $(this).css("border-bottom", "2px solid red");
-        $('.right-password').hide();
+        // $('.right-password').hide();
         $('.wrong-password').show("slow");
       }
     });
@@ -66,13 +69,14 @@ $(function() {
       var password = $('.password').val();
       if ( value == password ) {
         $(this).css("border-bottom", "2px solid green");
-        $('.wrong-confirmation').hide();
-        $('.right-confirmation').show();
+        $('.wrong-confirmation').hide("slow");
+        // $('.right-confirmation').show();
       } else {
         $(this).css("border-bottom", "2px solid red");
-        $('.right-confirmation').hide();
+        // $('.right-confirmation').hide();
         $('.wrong-confirmation').show("slow");
       }
     });
+
 
 });
