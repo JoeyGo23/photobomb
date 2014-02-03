@@ -48,18 +48,18 @@ $(function() {
       }
     });
 
-    // $('.password').keyup(function () {
-    //   var value = $(this).val();
-    //   if ( value.length > 7 ) {
-    //     $(this).css("border-bottom", "2px solid green");
-    //     $('.wrong-password').hide();
-    //     $('.right-password').show();
-    //   } else {
-    //     $(this).css("border-bottom", "2px solid red");
-    //     $('.right-password').hide();
-    //     $('.wrong-password').show("slow");
-    //   }
-    // });
+    $('.password').keyup(function () {
+      var value = $(this).val();
+      if ( value.length > 7 ) {
+        $(this).css("border-bottom", "2px solid green");
+        $('.wrong-password').hide();
+        $('.right-password').show();
+      } else {
+        $(this).css("border-bottom", "2px solid red");
+        $('.right-password').hide();
+        $('.wrong-password').show("slow");
+      }
+    });
 
     // $('.password_confirmation').keyup(function () {
     //   var value = $(this).val();
