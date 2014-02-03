@@ -61,18 +61,18 @@ $(function() {
       }
     });
 
-    // $('.password_confirmation').keyup(function () {
-    //   var value = $(this).val();
-    //   var password = $('.password').val();
-    //   if ( value == password ) {
-    //     $(this).css("border-bottom", "2px solid green");
-    //     $('.wrong-confirmation').hide();
-    //     $('.right-confirmation').show();
-    //   } else {
-    //     $(this).css("border-bottom", "2px solid red");
-    //     $('.right-confirmation').hide();
-    //     $('.wrong-confirmation').show("slow");
-    //   }
-    // });
+    $('.password_confirmation').keyup(function () {
+      var value = $(this).val();
+      var password = $('.password').val();
+      if ( value == password ) {
+        $(this).css("border-bottom", "2px solid green");
+        $('.wrong-confirmation').hide();
+        $('.right-confirmation').show();
+      } else {
+        $(this).css("border-bottom", "2px solid red");
+        $('.right-confirmation').hide();
+        $('.wrong-confirmation').show("slow");
+      }
+    });
 
 });
