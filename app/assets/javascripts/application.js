@@ -35,18 +35,18 @@ $(function() {
     });
 
 
-    // $('.username').keyup(function () {
-    //   var value = $(this).val();
-    //   if ( value.length > 3 ) {
-    //     $(this).css("border-bottom", "2px solid green");
-    //     $('.wrong-username').hide();
-    //     $('.right-username').show();
-    //   } else {
-    //     $(this).css("border-bottom", "2px solid red");
-    //     $('.right-username').hide();
-    //     $('.wrong-username').show("slow");
-    //   }
-    // });
+    $('.username').keyup(function () {
+      var value = $(this).val();
+      if ( value.length > 3 ) {
+        $(this).css("border-bottom", "2px solid green");
+        $('.wrong-username').hide();
+        $('.right-username').show();
+      } else {
+        $(this).css("border-bottom", "2px solid red");
+        $('.right-username').hide();
+        $('.wrong-username').show("slow");
+      }
+    });
 
     // $('.password').keyup(function () {
     //   var value = $(this).val();
