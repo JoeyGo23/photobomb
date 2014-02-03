@@ -37,21 +37,28 @@ $(function() {
       if (re.test($(this).val())) {
 
         $(this).css("border-bottom", "2px solid green");
+        $('.wrong-email').hide();
+        $('.right-email').show();
 
       } else {
 
         $(this).css("border-bottom", "2px solid red");
+        $('.right-email').hide();
+        $('.wrong-email').show("slow");
       }
     });
+
 
     $('.username').keyup(function () {
       var value = $(this).val();
       if ( value.length > 3 ) {
         $(this).css("border-bottom", "2px solid green");
-        // $(this).css("color", "green");
+        $('.wrong-username').hide();
+        $('.right-username').show();
       } else {
         $(this).css("border-bottom", "2px solid red");
-        // $(this).css("color", "red");
+        $('.right-username').hide();
+        $('.wrong-username').show("slow");
       }
     });
 
@@ -59,8 +66,12 @@ $(function() {
       var value = $(this).val();
       if ( value.length > 7 ) {
         $(this).css("border-bottom", "2px solid green");
+        $('.wrong-password').hide();
+        $('.right-password').show();
       } else {
         $(this).css("border-bottom", "2px solid red");
+        $('.right-password').hide();
+        $('.wrong-password').show("slow");
       }
     });
 
@@ -69,9 +80,30 @@ $(function() {
       var password = $('.password').val();
       if ( value == password ) {
         $(this).css("border-bottom", "2px solid green");
+        $('.wrong-confirmation').hide();
+        $('.right-confirmation').show();
       } else {
         $(this).css("border-bottom", "2px solid red");
+        $('.right-confirmation').hide();
+        $('.wrong-confirmation').show("slow");
       }
     });
+
+  //   $('.email').focusout(function() {
+  //     $(this).css("border-bottom", "2px solid white");
+  //     $('.right-email').hide();
+  //   }
+  // });
+
+    // $('input').keyup(function() {
+    //   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //   var username = $('.username').val();
+    //   var password = $('.password').val();
+    //   var password_confirmation = $('.password_confirmation').val();
+    //   if (re.test($('.email').val())) && ( username.length > 3 ) && ( password.length > 7 ) && ( password == password_confirmation ) {
+    //     $('.submit').show();
+    //   }
+    // });
+
 
 });

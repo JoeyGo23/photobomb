@@ -27,6 +27,54 @@ h2 {
   border-bottom: 2px solid green;
 }
 
+.wrong-email {
+  display: none;
+  font-size: 10pt;
+  color: red;
+}
+
+.right-email {
+  display: none;
+  font-size: 10pt;
+  color: green;
+}
+
+.wrong-username {
+  display: none;
+  font-size: 10pt;
+  color: red;
+}
+
+.right-username {
+  display: none;
+  font-size: 10pt;
+  color: green;
+}
+
+.wrong-password {
+  display: none;
+  font-size: 10pt;
+  color: red;
+}
+
+.right-password {
+  display: none;
+  font-size: 10pt;
+  color: green;
+}
+
+.wrong-confirmation {
+  display: none;
+  font-size: 10pt;
+  color: red;
+}
+
+.right-confirmation {
+  display: none;
+  font-size: 10pt;
+  color: green;
+}
+
 p {
   font-size: 13pt;
   font-family: 'Courier';
@@ -97,4 +145,9 @@ form {
 
 .submit {
   text-align: center;
+  // display: none;
+}
+
+.pass {
+  font-size: 10pt;
 }

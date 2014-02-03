@@ -9,14 +9,20 @@
   <%= devise_error_messages! %>
 
   <div>
-  <%= f.email_field :email, :autofocus => true, :class => 'email' %><br/>
+  <%= f.email_field :email, :class => 'email' %><br/>
   <%= f.label :email %>
 </div>
+
+<p class="wrong-email">Must be a valid email</p>
+<p class="right-email">Good!</p>
 
   <div>
   <%= f.text_field :username, :class => 'username' %><br />
   <%= f.label :username %>
 </div>
+
+<p class="wrong-username">Username must be at least 3 characters.</p>
+<p class="right-username">Good!</p>
 
   <div>
   <%= f.date_field :birthday %><br />
@@ -29,10 +35,16 @@
   <%= f.label :password %>
 </div>
 
+<p class="wrong-password">Password must be at least 8 characters.</p>
+<p class="right-password">Good!</p>
+
   <div>
   <%= f.password_field :password_confirmation, :class => 'password_confirmation' %><br />
   <%= f.label :password_confirmation %>
 </div>
+
+<p class="wrong-confirmation">Must match password.</p>
+<p class="right-confirmation">Good!</p>
 
   <div class="submit"><%= f.submit "Sign up" %></div>
 <% end %>
